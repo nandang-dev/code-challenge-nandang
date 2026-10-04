@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "commonjs",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js",
+    "dev": "node init && tsx watch src/index.ts",
+    "build": "node init && tsc -p tsconfig.json",
+    "start": "node init && node dist/index.js",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "migration:run": "typeorm-ts-node-commonjs migration:run -d src/config/data-source.ts",
