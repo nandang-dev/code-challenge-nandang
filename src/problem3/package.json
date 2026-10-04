@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "node init && vite",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
